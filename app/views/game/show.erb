@@ -1,0 +1,18 @@
+<h1>Quap Quap</h1>
+<p>Correct answer:</p>
+<%= @correct_answer.question.question  %><br><br>
+<p>Other Answers</p>
+<%@answer_options[0].answer.answer %>
+
+
+<form action="/game/<%= @correct_answer.id %>" method='post'>
+<input type="radio" name="answer[user_choice]" value="<%=@answer_options[0].answer.answer %>" ><%=@answer_options[0].answer.answer %>
+<br>
+<input type="radio" name="sex" value="female">Female
+<br><br>
+<input type="submit">
+</form>
+
+<!-- <form class="top-right" action=""></form>
+<form class="bottom-left" action=""></form>
+<form class="bottom-right" action=""></form> -->
