@@ -4,16 +4,18 @@ end
 
 post "/login" do
   @user = User.find_by(name: params[:user][:name])
-    if @user.password == params[:password]
+  return [500, "Invalid User"] unless @user
+    if @user.authenticate(params[:user][:password])
       session[:user_id] = @user.id
-      "denny wins"
-      # binding.pry
-      redirect to "/user/#{@user.id}"
+      redirect "/user/#{@user.id}"
     else
-
-      "denny loses"
-    #   @errors = ["Wrong username/password"]
-     # erb :login
+     erb :login
     end
+end
+
+
+get "/logout" do
+  session[:user_id] = nil
+  redirect "/"
 end
 
