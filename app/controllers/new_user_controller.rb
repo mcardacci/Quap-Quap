@@ -3,7 +3,7 @@ get '/user/new' do
 end
 
 post "/user/new" do
-  new_user = User.new(params[:user])
+  new_user = User.create(params[:user])
   if new_user.save
     session[:user_id] = new_user.id
     redirect "/user/#{new_user.id}"
