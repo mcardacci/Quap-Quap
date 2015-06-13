@@ -1,14 +1,18 @@
-<h3>Game Over</h3>
-<h5>You have finished all of the cards!</h5>
-<a href="/game"><button type="button">Play Again?</button></a>
-<a href="/logout"><button type="button">Finish It!</button></a>
-<div>
-  <h4>Stats:</h4>
-  <hr>
-  <p>Correct: <%= @correct %></p>
-  <br>
-  <p>Incorrect: <%= @incorrect %></p>
-</div>
+  <h3>Game Over</h3>
+  <h5>You have finished all of the cards!</h5>
+  <a href="/game"><button type="button">Play Again?</button></a>
+  <a href="/logout"><button type="button">Finish It!</button></a>
 
+  <div class="stats">
+    <h4>Stats:</h4>
+    <hr>
+    <p>Correct: <%= @correct %></p>
+    <br>
+    <p>Incorrect: <%= @incorrect %></p>
+  </div>
+
+<div class="game_over_gif">
+  <img src= "http://static.comicvine.com/uploads/original/6/67344/2019712-tumblr_lfyjccjwic1qam24h.gif" />
+</div>
 
 
