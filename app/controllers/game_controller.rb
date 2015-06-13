@@ -7,6 +7,13 @@ get '/game' do
   erb :'/game/show'
 end
 
-post '/game/:correct_answer' do
-  binding.pry
+post '/game/:id' do
+  user_input = params[:answer][:user_choice]
+  if user_input == params[:id]
+    Quap.correct(user_input)
+    redirect '/game?status=correct'
+  elsif user_input != params[:id]
+    Quap.incorrect(params[:id])
+    redirect '/game?status=incorrect'
+  end
 end
