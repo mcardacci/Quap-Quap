@@ -1,5 +1,7 @@
 require 'pry'
 get '/game' do
+  redirect '/game_over' unless Quap.choices
+  @metrics = Quap.metrics
   @current_user = User.find_by(id: session[:user_id])
   @answer_options = Quap.choices
   @correct_answer = @answer_options[0]
