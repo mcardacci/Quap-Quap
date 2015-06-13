@@ -1,7 +1,7 @@
 class CreateQuestions < ActiveRecord::Migration
   def change
     create_table :questions do |t|
-      t.string :question, null: false
+      t.string :body, null: false
       t.timestamps
     end
   end

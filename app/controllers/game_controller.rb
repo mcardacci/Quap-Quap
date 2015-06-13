@@ -1,7 +1,7 @@
 require 'pry'
 get '/game' do
   @current_user = User.find_by(id: session[:user_id])
-  @answer_options = Quap.questions
+  @answer_options = Quap.choices
   @correct_answer = @answer_options[0]
   @answer_options.shuffle!
   erb :'/game/show'
