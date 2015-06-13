@@ -1,3 +1,5 @@
+require 'pry'
+
 class Quap < ActiveRecord::Base
 
   belongs_to :question
