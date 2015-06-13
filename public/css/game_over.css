@@ -14,3 +14,7 @@ hr {
   text-align: center;
   font-size: 20px;
 }
+
+.game_over {
+  text-align: center;
+}
