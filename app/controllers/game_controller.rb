@@ -14,8 +14,8 @@ post '/game/:id' do
   if user_input == params[:id]
     Quap.correct(user_input)
     redirect '/game?status=correct'
-  else
-    Quap.incorrect(user_input)
+  elsif user_input != params[:id]
+    Quap.incorrect(params[:id])
     redirect '/game?status=incorrect'
   end
 end
