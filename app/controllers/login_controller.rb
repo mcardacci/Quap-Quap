@@ -1,5 +1,5 @@
 get "/login" do
-  erb :login
+  erb :'login_logout/login'
 end
 
 post "/login" do
@@ -9,7 +9,7 @@ post "/login" do
       session[:user_id] = @user.id
       redirect "/user/#{@user.id}"
     else
-     erb :login
+     erb :'login_logout/logout'
     end
 end
 
