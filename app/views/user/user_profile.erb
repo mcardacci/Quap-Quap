@@ -1,12 +1,9 @@
-<h2 style="text-align: center">Welcome, <%= user.name %>!</h2>
+<div class="user_profile">
+  <h2 style="text-align: center">Welcome, <%= user.name %>!</h2>
 
-<h5 style="text-align: center">Would you like to begin?</h5>
-<a href="/game"><button class="yes" style="float: left" type="button">Yes</button></a>
-<style>
-button.yes {margin-left: 40%;}
-button.no {margin-right: 40%;}
-button.logout {margin-left: 50%; margin-right: 50%; margin-top: 10%;}
-</style>
-<a href="/"><button class="no" style="float: right" type="button">No</button></a>
-<a href="/logout"><button class="logout" type="button">Logout</button></a>
+  <h5>Would you like to begin?</h5>
+  <a href="/game"><button type="button">Yes</button></a><br><br>
+  <a href="/"><button type="button">No</button></a><br><br>
+  <a href="/logout"><button type="button">Logout</button></a>
+</div>
 
