@@ -1,0 +1,27 @@
+.banner {
+  background-image: url("http://i.giphy.com/iKA33IfGvlRXq.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#button {
+  background-color: red;
+  display: block;
+  height: 100px;
+  width: 300px;
+  background: #34696f;
+  border-radius: 20px;
+}
+
+.welcome_buttons {
+  margin-left: auto;
+  margin-top: auto;
+  position: center;
+  position: relative;
+
+}
+
+.welcome_message {
+text-align: center;
+}
