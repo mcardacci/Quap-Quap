@@ -23,11 +23,3 @@ Question.create(body: "Book?")
 Answer.create(body: "neuromancer")
 Picture.create(path: 'pictures/Cat.jpg')
 Quap.create(question_id: 4, answer_id: 4, picture_id: 1, user_id: 4)
-
-
-# 3.times do |num|
-#   Quap.create(question: Question.create(question: Faker::Company.bs),
-#    answer: Answer.create(answer: Faker::Company.catch_phrase),
-#    picture: Picture.create(picture_url: Faker::Company.logo),
-#    user: User.create(name: Faker::Name.name, password: "123"))
-# end
