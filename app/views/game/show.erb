@@ -1,18 +1,32 @@
 <h1>Quap Quap</h1>
-<p>Correct answer:</p>
-<%= @correct_answer.question.question  %><br><br>
-<p>Other Answers</p>
-<%@answer_options[0].answer.answer %>
+<p>Question (<%=@metrics[:current]%> of <%= @metrics[:total] %>):</p>
+<%= @correct_answer.question.body %>
+<br>
+<p>Correct answer(for testing):</p>
+<%= @correct_answer.answer.body  %><br>
+<br>
 
+<% if params[:status] == "incorrect" %>
+  <p>Try harder next time</p>
+<% end %>
+<% if params[:status] == "correct" %>
+  <p>Well done</p>
+<% end %>
 
 <form action="/game/<%= @correct_answer.id %>" method='post'>
-<input type="radio" name="answer[user_choice]" value="<%=@answer_options[0].answer.answer %>" ><%=@answer_options[0].answer.answer %>
-<br>
-<input type="radio" name="sex" value="female">Female
-<br><br>
-<input type="submit">
+  <img src="<%=@answer_options[0].picture.path %>">
+  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[0].answer_id %>" ><%=@answer_options[0].answer.body %>
+  <br>
+  <img src="<%=@answer_options[1].picture.path %>">
+  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[1].answer_id %>"><%=@answer_options[1].answer.body %>
+  <br>
+  <img src="<%=@answer_options[2].picture.path %>">
+  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[2].answer_id %>"><%=@answer_options[2].answer.body %>
+  <br>
+  <img src="<%=@answer_options[3].picture.path %>">
+  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[3].answer_id %>"><%=@answer_options[3].answer.body %>
+  <br>
+  <input type="submit">
 </form>
 
-<!-- <form class="top-right" action=""></form>
-<form class="bottom-left" action=""></form>
-<form class="bottom-right" action=""></form> -->
+
