@@ -5,9 +5,9 @@
 <div>
 <h4>Stats:</h4>
 <hr>
-<p>Correct:</p>
+<p>Correct: <%= Quap.where(status: "correct").count %></p>
 <br>
-<p>Incorrect:</p>
+<p>Incorrect: <%= Quap.where(status: "incorrect").count %></p>
 </div>
 
 

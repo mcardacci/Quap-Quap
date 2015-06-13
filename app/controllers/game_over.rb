@@ -1,3 +1,3 @@
 get "/game_over" do
-  erb :game_over
+  erb :'game/game_over'
 end
