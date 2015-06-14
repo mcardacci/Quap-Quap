@@ -14,7 +14,6 @@ gem 'bcrypt'
 gem 'rake'
 gem 'shotgun'
 gem 'pry'
-gem 'easy_translate'
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
