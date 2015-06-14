@@ -13,20 +13,29 @@
 <% if params[:status] == "correct" %>
   <p>Well done</p>
 <% end %>
-
+<ul class="image_grid">
 <form action="/game/<%= @correct_answer.id %>" method='post'>
+<li>
   <img src="<%=@answer_options[0].picture.path %>">
   <input type="radio" name="answer[user_choice]" value="<%=@answer_options[0].answer_id %>" ><%=@answer_options[0].answer.body %>
   <br>
+</li>
+<li>
   <img src="<%=@answer_options[1].picture.path %>">
   <input type="radio" name="answer[user_choice]" value="<%=@answer_options[1].answer_id %>"><%=@answer_options[1].answer.body %>
   <br>
+</li>
+<li>
   <img src="<%=@answer_options[2].picture.path %>">
   <input type="radio" name="answer[user_choice]" value="<%=@answer_options[2].answer_id %>"><%=@answer_options[2].answer.body %>
   <br>
+</li>
+<li>
   <img src="<%=@answer_options[3].picture.path %>">
   <input type="radio" name="answer[user_choice]" value="<%=@answer_options[3].answer_id %>"><%=@answer_options[3].answer.body %>
   <br>
+</li>
+</br>
   <input type="submit">
 </form>
-
+</div>
