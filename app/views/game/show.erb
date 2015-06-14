@@ -5,12 +5,6 @@
 <%= @correct_answer.question.body %>
 <br>
 </div>
-<div class="correct_answer">
-<p>Correct answer(for testing):</p>
-<%= @correct_answer.answer.body  %><br>
-<%= @correct_answer.id  %><br>
-<br>
-</div>
 
 <div class="status">
 <% if params[:status] == "incorrect" %>
