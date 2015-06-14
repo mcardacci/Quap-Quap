@@ -11,8 +11,10 @@ end
 
 post '/game/:id' do
   user_input = params[:answer][:user_choice]
+  audio_file = Quap.find_by(question_id: user_input).question.body.split(" ").last.sub!(/[?]?$/, '')
   if user_input == params[:id]
     Quap.correct(user_input)
+    puts `mpg123 public/audio/#{audio_file}.mp3`
     redirect '/game?status=correct'
   elsif user_input != params[:id]
     Quap.incorrect(params[:id])

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
-
+`brew install mpg123`
 # PostgreSQL driver
 gem 'pg'
 
