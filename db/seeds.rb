@@ -10,7 +10,7 @@ File.open("db/chinese.rb", "r") do |f|
     answer = line.split.first.to_s
     Picture.create(path: 'pictures/' + path + '.png')
     Answer.create(body: answer)
-    Question.create(body: "Which one means " + answer + "?")
+    Question.create(body: "Which one means " + path + "?")
   end
 end
 27.times do |i|
