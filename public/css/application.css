@@ -1,36 +1,48 @@
 body {
-  /*background-image: url("http://i.giphy.com/iKA33IfGvlRXq.gif");*/
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+}
+
+header {
+  text-align: center;
 }
 
 #button {
-  background-color: red;
   display: block;
   height: 100px;
   width: 300px;
-  background: #34696f;
+  background: white;
   border-radius: 20px;
 }
 
 .welcome_buttons {
   display: block;
-  margin: 0 auto;
+  padding: 5% 1em 5% 1em;
   bottom: 0;
   float: left;
 }
+.wrapper {
+  margin-left: 20%;
+}
 
 .welcome_message {
-text-align: center;
-margin-top: 50%;
-bottom: 0;
-color: #34696f;
-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-image: url("../pictures/languagesmedium.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  height: 500px;
+  text-align: center;
+  color: white;
 }
 
 .login {
-  background-color: white;
-  color: #34696f;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.logo {
+  padding-top:20px;
+  font-size: 100px;
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
 }
