@@ -1,27 +1,48 @@
-.banner {
-  background-image: url("http://i.giphy.com/iKA33IfGvlRXq.gif");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+body {
+
+}
+
+header {
+  text-align: center;
 }
 
 #button {
-  background-color: red;
   display: block;
   height: 100px;
   width: 300px;
-  background: #34696f;
+  background: white;
   border-radius: 20px;
 }
 
 .welcome_buttons {
-  margin-left: auto;
-  margin-top: auto;
-  position: center;
-  position: relative;
-
+  display: block;
+  padding: 5% 1em 5% 1em;
+  bottom: 0;
+  float: left;
+}
+.wrapper {
+  margin-left: 20%;
 }
 
 .welcome_message {
-text-align: center;
+  background-image: url("../pictures/languagesmedium.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  height: 500px;
+  text-align: center;
+  color: white;
+}
+
+.login {
+
+}
+
+.logo {
+  padding-top:20px;
+  font-size: 100px;
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
 }

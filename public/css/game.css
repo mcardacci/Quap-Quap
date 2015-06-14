@@ -1,0 +1,19 @@
+.image_grid {
+  list-style: none;
+  width: auto;
+}
+
+.image_grid li {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #DDD;
+  vertical-align: bottom;
+  max-width: 45%;
+
+}
+
+.image_grid img {
+  margin: 5px;
+  max-width: 75%;
+  height: auto;
+}
