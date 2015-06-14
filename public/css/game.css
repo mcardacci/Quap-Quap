@@ -17,3 +17,29 @@
   max-width: 75%;
   height: auto;
 }
+
+.question_order {
+  font-size: 22px;
+  text-decoration: underline;
+}
+.question
+{
+  font-size: 28px;
+}
+
+.correct_answer {
+color: blue;
+}
+
+.status {
+font-size: 26px;
+text-align: center;
+}
+
+#correct  {
+  color: #19BF19;
+}
+
+#incorrect {
+  color: #E52622;
+}
