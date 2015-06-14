@@ -1,0 +1,7 @@
+<h2>Update Your Profile!</h2>
+<form action="/user/<%= user.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input type="text" name="user[name]" placeholder="<%= user.name %>">
+  <input type="password" name= "user[password]" placeholder="Confirm Password"><br><br>
+  <input type="submit" value="Update">
+</form>
