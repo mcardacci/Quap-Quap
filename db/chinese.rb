@@ -17,7 +17,7 @@
 灯 light
 游泳池 pool
 电脑 computer
-手机 cellphone
+手机 cell_phone
 腿 leg
 头发 hair
 嘴巴 mouth
