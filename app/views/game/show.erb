@@ -1,18 +1,26 @@
-<h1>Quap Quap</h1>
-<p>Question (<%=@metrics[:current]%> of <%= @metrics[:total] %>):</p>
+<header><h2>Quap Quap<h2></header>
+<div class="container">
+<div class="question">
+<p class="question_order">Question (<%=@metrics[:current]%> of <%= @metrics[:total] %>):</p>
 <%= @correct_answer.question.body %>
 <br>
+</div>
+<div class="correct_answer">
 <p>Correct answer(for testing):</p>
 <%= @correct_answer.answer.body  %><br>
 <%= @correct_answer.id  %><br>
 <br>
+</div>
 
+<div class="status">
 <% if params[:status] == "incorrect" %>
-  <p>Try harder next time</p>
+  <p id="incorrect">Try harder next time</p>
 <% end %>
 <% if params[:status] == "correct" %>
-  <p>Well done</p>
+  <p id="correct">Well done</p>
 <% end %>
+</div>
+
 <ul class="image_grid">
 <form action="/game/<%= @correct_answer.id %>" method='post'>
 <li>
