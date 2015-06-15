@@ -1,3 +1,4 @@
+`brew install mpg123`
 names = %w(marco denny mike ben)
 
 4.times do |i|
