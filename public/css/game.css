@@ -50,3 +50,9 @@ text-align: center;
 #incorrect {
   color: #E52622;
 }
+
+#submit {
+  width: 10em;
+  height: 2em;
+  font-size: 18px;
+}
