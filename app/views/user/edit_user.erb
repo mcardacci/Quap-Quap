@@ -1,3 +1,15 @@
+<div class="background">
+</div>
+
+<div id="menu">
+  <ul>
+    <li><a href="/">Home Page</a></li>
+    <li><a href="/user/<%= user.id %>/edit">Update Profile</a></li>
+    <li><a href="/logout">Logout</a></li>
+    <li><a href="/user/<%= user.id %>/delete">Delete Account</a></li>
+  </ul>
+</div>
+<div class="container">
 <h2>Update Your Profile!</h2>
 
 <form action="/user/<%= user.id %>" method="post">
@@ -6,3 +18,4 @@
   <input type="password" name= "user[password]" placeholder="Confirm Password"><br><br>
   <input type="submit" value="Update">
 </form>
+</div>

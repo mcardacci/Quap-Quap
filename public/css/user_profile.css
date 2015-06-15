@@ -8,13 +8,13 @@
 #menu {
     width: 100%;
     height: 35px;
-    font-size: 16px;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    /*font-family: Tahoma, Geneva, sans-serif;*/
     font-weight: bold;
     text-align: center;
     text-shadow: 3px 2px 3px #333333;
-    background-color: #8AD9FF;
-        border-radius: 8px;
+    background-color: #477B7F;
+    border-radius: 8px;
 }
 
 #menu ul{
@@ -30,11 +30,11 @@
 
 #menu a {
   text-decoration: none;
-  color: #00F;
+  color: black;
   padding: 8px 8px 8px 8px;
 }
 
 #menu a:hover {
-    color: #F90;
-    background-color: #FFF;
+    color: #8EF7FF;
+    background-color: #477B7F;
 }
