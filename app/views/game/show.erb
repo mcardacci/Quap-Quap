@@ -22,7 +22,7 @@
 <form action="/game/<%= @correct_answer.id %>" method='post'>
 <li>
   <img src="<%=@answer_options[0].picture.path %>">
-  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[0].answer_id %>" ><%=@answer_options[0].answer.body %>
+  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[0].answer_id %>" checked><%=@answer_options[0].answer.body %>
   <br>
 </li>
 <li>
