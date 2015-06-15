@@ -8,8 +8,8 @@ header {
 
 #button {
   display: block;
-  height: 100px;
-  width: 300px;
+  height: 75px;
+  width: 250px;
   background: white;
   border-radius: 20px;
 }
