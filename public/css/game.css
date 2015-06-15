@@ -22,7 +22,8 @@ header {
   padding: 5px;
   border: 1px solid #DDD;
   vertical-align: bottom;
-  max-width: 45%;
+  width: 45%;
+  height: 45%;
 
 }
 
