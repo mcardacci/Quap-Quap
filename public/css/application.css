@@ -16,12 +16,13 @@ header {
 
 .welcome_buttons {
   display: block;
-  padding: 5% 1em 5% 1em;
+  padding: 1%;
   bottom: 0;
   float: left;
+  font-size: 20px;
 }
 .wrapper {
-  margin-left: 20%;
+  margin-left: 26%;
 }
 
 .welcome_message {
@@ -32,6 +33,7 @@ header {
   height: 500px;
   text-align: center;
   color: white;
+  padding: 10%;
 }
 
 .login {
