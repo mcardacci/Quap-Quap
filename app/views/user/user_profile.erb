@@ -1,14 +1,21 @@
 <div class="user_profile">
   <h2>Welcome, <%= user.name %>!</h2>
+</div>
+<br>
+<div id="menu">
+  <ul>
+    <li><a href="/">Home Page</a></li>
+    <li><a href="/user/<%= user.id %>/edit">Update Profile</a></li>
+    <li><a href="/logout">Logout</a></li>
+    <li><a href="/user/<%= user.id %>/delete">Delete Account</a></li>
+  </ul>
+</div>
 
-  <h5>Would you like to begin?</h5>
+<br>
+
+<div class="begin_game">
+  <h4>Would you like to begin?</h4>
   <a href="/game"><button type="button">Yes</button></a><br><br>
   <a href="/"><button type="button">No</button></a><br><br>
-  <a href="/logout"><button type="button">Logout</button></a><br><br><br>
 </div>
-<div class="update_profile">
-  <a href="/user/<%= user.id %>/edit"><button type="button">Update Your Profile</button></a>
-</div><br>
-<div class="delete_profile">
-  <a href="/user/<%= user.id %>/delete"><button type="button">Delete Your Account</button></a>
-</div>
+
