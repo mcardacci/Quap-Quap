@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $('.edit-user').on('click', updateUserForm);
+  $('.')
 });
 
 var updateUserForm = (function(event) {
