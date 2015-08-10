@@ -24,7 +24,6 @@ class Quap < ActiveRecord::Base
   end
 
   def self.incorrect(input)
-    # binding.pry
     answer = self.find_by(answer_id: input)
     answer.update(status: "incorrect")
   end
