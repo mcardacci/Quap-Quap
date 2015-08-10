@@ -10,7 +10,7 @@ The Sinatra Skeleton:
 
 ### Quickstart
 
-1.  click [here](http://brew.sh/) install homebrew if you don't have it already 
+1.  click [here](http://brew.sh/) to install homebrew if you don't have it already 
 2.  `bundle install`
 3.  `bundle exec shotgun`
 
