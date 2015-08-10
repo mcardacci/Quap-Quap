@@ -1,6 +1,7 @@
-> **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
 
 ### Purpose
+Quap is an acronym for Question, User, Answer, Picture. It's an app built in Sinatra that helps it’s user to learn Cantonese. It utilizes a Home Brew text to speech app, alongside a Question, Answer, and Picture for an easy mnemonic device. Modeled after Duo Lingo.
+
 The Sinatra Skeleton:
 
 1. Provides a foundation for building challenges or creating a new Sinatra application.
@@ -9,8 +10,9 @@ The Sinatra Skeleton:
 
 ### Quickstart
 
-1.  `bundle install`
-2.  `shotgun config.ru`
+1.  click [here](http://brew.sh/)install homebrew if you don't have it already 
+2.  `bundle install`
+3.  `bundle exec shotgun`
 
 As needed, create models & migrations with the `rake` tasks:
 
@@ -21,7 +23,7 @@ rake generate:model      # Create an empty model in app/models, e.g., rake gener
 
 ### Contributing
 
-We would love for you to help make the skeleton more awesome, There are three ways to contribute:
+We would love for you to help make our app more awesome, there are three ways to contribute:
 
 1. Ask for a bug fix or enhancement!
 2. Submit a pull request for a bug fix or enhancement!
