@@ -3,9 +3,9 @@
 Quap is an acronym for Question, User, Answer, Picture. It's an app built in Sinatra that helps it’s user to learn Cantonese. It utilizes a Home Brew text to speech app, alongside a Question, Answer, and Picture for an easy mnemonic device. Modeled after Duo Lingo.
 
 ### Contributing Members
-#[Marco Cardacci](https://github.com/mcardacci)
-#[Denny Tek](https://github.com/tekd)
-#[Michael Bozza](https://github.com/michaelbbozza)
+####[Marco Cardacci](https://github.com/mcardacci)
+####[Denny Tek](https://github.com/tekd)
+####[Michael Bozza](https://github.com/michaelbbozza)
 
 ### Quickstart
 
