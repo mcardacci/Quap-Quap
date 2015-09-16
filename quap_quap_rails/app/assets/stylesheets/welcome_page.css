@@ -1,0 +1,50 @@
+header {
+  text-align: center;
+}
+
+#button {
+  display: block;
+  height: 75px;
+  width: 250px;
+  background: white;
+  border-radius: 20px;
+}
+
+.welcome_buttons {
+  display: block;
+  padding: 1%;
+  bottom: 0;
+  float: left;
+  font-size: 20px;
+}
+.wrapper {
+  margin-left: 26%;
+}
+
+.welcome_message {
+  background-image: url("languagesmedium.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  height: 600px;
+  text-align: center;
+  color: white;
+  padding: 10%;
+}
+
+.login {
+
+}
+
+.logo {
+  padding-top:10px;
+  font-size: 100px;
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+padding: 5%;
+}
