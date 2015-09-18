@@ -1,14 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+<div id="menu">
+  <ul>
+    <li><a href="/">Home Page</a></li>
+    <li><%= link_to 'Update Profile', edit_user_path(@user) %></li>
+    <li><a href="/logout">Logout</a></li>
+    <li><%= link_to "Delete Account", user_path(@user), method: "delete" %></li>
+  </ul>
+</div>
+<div class="container">
+  <div class="user_profile">
+    <h1>Welcome, <%= @user.name %>!</h1>
+  </div>
+  <br>
+  <br>
+  <div class="begin_game">
+    <h2>Would you like to begin?</h2>
+    <%= link_to "Yes", game_path %><br>
+    <%= link_to "No", root_path %>
+  </div>
+</div>
 
-<p>
-  <strong>Password hash:</strong>
-  <%= @user.password_hash %>
-</p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
