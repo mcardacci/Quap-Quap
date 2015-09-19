@@ -3,7 +3,6 @@
 	<div class="question">
 		<p class="question_order">Question (<%=@metrics[:current]%> of <%= @metrics[:total] %>):</p>
 		<%= @correct_answer.question.body %>
-	<br>
 	</div>
 
 	<div class="status">
@@ -15,33 +14,33 @@
 		<% end %>
 	</div>
 
-<ul class="image_grid">
-<form action="/game/<%= @correct_answer.id %>" method='post'>
-<li>
-	<%= image_tag("icon.png", size: "16x10", alt: "Edit Entry") %>
-  <img src="<%=@answer_options[0].picture.path %>">
-  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[0].answer_id %>" checked><%=@answer_options[0].answer.body %>
-  <br>
-</li>
-<li>
-  <img src="<%=@answer_options[1].picture.path %>">
-  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[1].answer_id %>"><%=@answer_options[1].answer.body %>
-  <br>
-</li>
-<li>
-  <img src="<%=@answer_options[2].picture.path %>">
-  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[2].answer_id %>"><%=@answer_options[2].answer.body %>
-  <br>
-</li>
-<li>
-  <img src="<%=@answer_options[3].picture.path %>">
-  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[3].answer_id %>"><%=@answer_options[3].answer.body %>
-  <br>
-</li>
-</br>
-</br>
-  <input type="submit" id="submit">
-</form>
+	<ul class="image_grid">
+		<form action="/game/<%= @correct_answer.id %>" method='post'>
+			<li>
+				<%= image_tag("#{@answer_options[0].picture.path}", size: "300x300") %>
+			  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[0].answer_id %>" checked><%=@answer_options[0].answer.body %>
+			  <br>
+			</li>
+			<li>
+			  <%= image_tag("#{@answer_options[1].picture.path}", size: "300x300") %>
+			  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[1].answer_id %>"><%=@answer_options[1].answer.body %>
+			  <br>
+			</li>
+			<li>
+				<%= image_tag("#{@answer_options[2].picture.path}", size: "300x300") %>
+			  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[2].answer_id %>"><%=@answer_options[2].answer.body %>
+			  <br>
+			</li>
+			<li>
+				<%= image_tag("#{@answer_options[3].picture.path}", size: "300x300") %>
+			  <input type="radio" name="answer[user_choice]" value="<%=@answer_options[3].answer_id %>"><%=@answer_options[3].answer.body %>
+			  <br>
+			</li>
+			</br>
+			</br>
+		  <input type="submit" id="submit">
+		</form>
+	</ul>
 </div>
 
 <div class="background">

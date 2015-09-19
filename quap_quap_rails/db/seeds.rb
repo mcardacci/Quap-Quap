@@ -9,7 +9,7 @@ File.open("db/chinese.rb", "r") do |f|
   f.each_line do |line|
     path = line.split[1].to_s
     answer = line.split.first.to_s
-    Picture.create(path: 'pictures/' + path + '.png')
+    Picture.create(path: path + '.png')
     Answer.create(body: answer)
     Question.create(body: "Which one means " + path + "?")
   end
