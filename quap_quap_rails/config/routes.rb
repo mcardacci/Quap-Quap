@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/sessions/new'
   post '/sessions/create' => 'sessions#create'
   get '/game' => 'game#game_run'
+  post '/game/:id' => 'game#decide'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
